@@ -1,0 +1,20 @@
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  set_time_limit() has been disabled for security reasons in /home/inomacmx/pruebas.inomac.mx/cap_humano/core/access_private.php on line 19
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 97
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 154
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 186
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 200
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 211
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 246
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 260
+[16-Feb-2022 00:46:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 271
+[16-Feb-2022 00:46:21 UTC] PHP Warning:  set_time_limit() has been disabled for security reasons in /home/inomacmx/pruebas.inomac.mx/cap_humano/core/access_private.php on line 19
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  set_time_limit() has been disabled for security reasons in /home/inomacmx/pruebas.inomac.mx/cap_humano/core/access_private.php on line 19
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 97
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 154
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 186
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 200
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 211
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 246
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 260
+[16-Feb-2022 01:01:21 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/inomacmx/pruebas.inomac.mx/utils/piePagina.php on line 271
+[16-Feb-2022 01:01:32 UTC] PHP Warning:  set_time_limit() has been disabled for security reasons in /home/inomacmx/pruebas.inomac.mx/cap_humano/core/access_private.php on line 19
