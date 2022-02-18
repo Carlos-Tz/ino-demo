@@ -2,6 +2,7 @@
 
 /* define('DIR_A', 'https://demo.inomac.mx/cap_humano'); */
 /* define('DIR_A','http://inomac.test/cap_humano/'); */
+/* define('DIR_J','http://inomac.test/'); */
 
 ?>
 
@@ -105,7 +106,8 @@
 
 <!-- Datatables -->
 
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script> -->
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
 
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
 
@@ -154,7 +156,7 @@
 
                         <?php
 
-                        $letreros = $agroquimico[$i]["monto"].", " ;
+                       /*  $letreros = $agroquimico[$i]["monto"].", " ;
 
                         $letreros .= $fertilizante[$i]["monto"].", " ;
 
@@ -182,7 +184,7 @@
 
                         $letreros .= $infraestructura[$i]["monto"] ;
 
-                        echo $letreros ;
+                        echo $letreros ; */
 
                         ?>
 
@@ -192,7 +194,7 @@
 
                         <?php
 
-                        for ($i = 0 ; $i < count($colores) ; $i++){
+                        /* for ($i = 0 ; $i < count($colores) ; $i++){
 
                             $label = "'".$colores[$i]."'" ;
 
@@ -204,7 +206,7 @@
 
                             echo $label ;
 
-                        }
+                        } */
 
                         ?>
 
@@ -268,7 +270,7 @@
 
                         //echo $agroquimico[$pos]["monto"].", ".$fertilizante[$pos]["monto"] ;
 
-                        $letreros = $agroquimico[$pos]["monto"].", " ;
+                        /* $letreros = $agroquimico[$pos]["monto"].", " ;
 
                         $letreros .= $fertilizante[$pos]["monto"].", " ;
 
@@ -296,7 +298,7 @@
 
                         $letreros .= $infraestructura[$pos]["monto"] ;
 
-                        echo $letreros ;
+                        echo $letreros ; */
 
                         ?>
 
@@ -306,7 +308,7 @@
 
                         <?php
 
-                        for ($i = 0 ; $i < count($colores) ; $i++){
+                        /* for ($i = 0 ; $i < count($colores) ; $i++){
 
                             $label = "'".$colores[$i]."'" ;
 
@@ -319,7 +321,7 @@
                             echo $label ;
 
                         }
-
+ */
                         ?>
 
                     ],
@@ -370,7 +372,7 @@
 
                 <?php
 
-                for($i = 0 ; $i < count($tablas) ; $i++) {
+               /*  for($i = 0 ; $i < count($tablas) ; $i++) {
 
                     $label = '"'.$tablas[$i].'"' ;
 
@@ -382,7 +384,7 @@
 
                     echo $label ;
 
-                }
+                } */
 
                 ?>
 
@@ -398,7 +400,7 @@
 
                         <?php
 
-                        for ($i = 0 ; $i < count($totales) ; $i++){
+                        /* for ($i = 0 ; $i < count($totales) ; $i++){
 
                             $label = $totales[$i]["monto"] ;
 
@@ -410,7 +412,7 @@
 
                             echo $label ;
 
-                        }
+                        } */
 
                         ?>
 
@@ -420,7 +422,7 @@
 
                         <?php
 
-                        for ($i = 0 ; $i < count($colores) ; $i++){
+                        /* for ($i = 0 ; $i < count($colores) ; $i++){
 
                             $label = "'".$colores[$i]."'" ;
 
@@ -432,7 +434,7 @@
 
                             echo $label ;
 
-                        }
+                        } */
 
                         ?>
 
@@ -490,7 +492,7 @@
 
                 <?php
 
-                for($i = 0 ; $i < count($sub_rancho) ; $i++) {
+                /* for($i = 0 ; $i < count($sub_rancho) ; $i++) {
 
                     $label = '"'.$sub_rancho[$i].'"' ;
 
@@ -502,7 +504,7 @@
 
                     echo $label ;
 
-                }
+                } */
 
                 ?>
 
@@ -518,7 +520,7 @@
 
                         <?php
 
-                        for ($i = 0 ; $i < count($totales) ; $i++){
+                       /*  for ($i = 0 ; $i < count($totales) ; $i++){
 
                             $label = $totales[$i]["total"] ;
 
@@ -530,7 +532,7 @@
 
                             echo $label ;
 
-                        }
+                        } */
 
                         ?>
 
@@ -540,7 +542,7 @@
 
                         <?php
 
-                        for ($i = 0 ; $i < count($colores) ; $i++){
+                        /* for ($i = 0 ; $i < count($colores) ; $i++){
 
                             $label = "'".$colores[$i]."'" ;
 
@@ -552,7 +554,7 @@
 
                             echo $label ;
 
-                        }
+                        } */
 
                         ?>
 
@@ -618,7 +620,7 @@
 
 <script>
 
-    $(document).ready( function () {
+    /* $(document).ready( function () {
 
         $('#ejemplo').DataTable({
 
@@ -674,7 +676,7 @@
 
         });
 
-    } );
+    } ); */
 
 </script>
 
@@ -682,7 +684,7 @@
 
 
 
-    $(document).ready(function() {
+   /*  $(document).ready(function() {
 
         var id_subrancho ;
 
@@ -794,10 +796,10 @@
 
 
 
-    } ) ;
+    } ) ; */
 
 
-
+/* 
     function muestra(elemento) {
 
         switch(elemento) {
@@ -838,11 +840,11 @@
 
         }
 
-    }
+    } */
 
 
 
-    var total = 0 ;
+    /* var total = 0 ;
 
 
 
@@ -882,7 +884,7 @@
 
         } ;
 
-    }
+    } */
 
 
 

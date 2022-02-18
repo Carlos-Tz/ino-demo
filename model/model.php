@@ -6,7 +6,8 @@ class Modelo{
     private $db;
     public function __construct(){
         $this->Modelo = array();
-        $this->db=new PDO('mysql:host=localhost;dbname=inomac',"root","");
+        $this->db=new PDO('mysql:host=localhost;dbname=demo',"root","");
+        /* $this->db=new PDO('mysql:host=localhost;dbname=inomac',"root",""); */
         /* $this->db = $this->conexion; */
     }
 
@@ -22,11 +23,13 @@ class Modelo{
     public function getData($colums, $table, $cond){
         $consul="select ".$colums." from ".$table." where ".$cond.";";
         $resu=$this->db->query($consul);
-        while($filas = $resu->FETCHALL(PDO::FETCH_ASSOC)) {
+        $r = $resu->FETCHALL(PDO::FETCH_ASSOC);
+        return $r;
+        /* while($filas = $resu->FETCHALL(PDO::FETCH_ASSOC)) {
             $this->registros[]=$filas;
         }
 
-        return $this->registros;
+        return $this->registros; */
     }
 
 

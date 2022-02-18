@@ -22,10 +22,35 @@ class Controller{
 			return ($v['nom_prod'] == $name);
 		}); */
 		require_once("view/view.php");
+		/* print json_encode($data, JSON_UNESCAPED_UNICODE); */
     }
 
 	public static function intros($arr_param){
-		require_once("view/entradas.php");
+		$data_model = new Modelo();
+		$data1 = $data_model->getData("*", "movtos_prod", "1");
+		/* print json_encode($data, JSON_UNESCAPED_UNICODE); */
+		/* print json_encode([
+			'data' => $data,
+		]); */
+		/* require_once("view/entradas.php"); */
+		$data = array();
+		$draw = $_POST['draw'];
+		foreach ($data1 as $row) {
+			$data[] = array(
+				"id_prod"=>$row['id_prod'],
+				"cantidad"=>$row['cantidad'],
+				"nom_prod"=>$row['nom_prod'],
+				"clasificacion"=>$row['clasificacion'],
+			);
+		}
+		// Response
+		$response = array(
+			"draw" => intval($draw),
+			/* "iTotalRecords" => $totalRecords,
+			"iTotalDisplayRecords" => $totalRecordwithFilter, */
+			"aaData" => $data
+		);
+		echo json_encode($response);
 	}
 
 

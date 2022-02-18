@@ -1,10 +1,10 @@
 <?php
 
-    /* define('DIR_A','http://localhost:8080/local/dev/adm/in/cap_humano/'); */
-    define('DIR_A','http://inomac.test/cap_humano/');
+    define('DIR_A','http://localhost:8080/local/dev/adm/in/cap_humano/');
+    /* define('DIR_A','http://inomac.test/cap_humano/'); */
 
-/* define('DIR_S','http://localhost:8080/local/dev/adm/in'); */
-define('DIR_S','http://inomac.test');
+define('DIR_S','http://localhost:8080/local/dev/adm/in');
+/* define('DIR_S','http://inomac.test'); */
 
 
 
@@ -69,6 +69,12 @@ define('DIR_S','http://inomac.test');
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+ -->
 
 </head>
 

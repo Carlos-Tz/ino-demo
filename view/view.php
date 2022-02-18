@@ -4,9 +4,9 @@ date_default_timezone_set('America/Mexico_City');
 ?>
 
 <div class="card-header-actions">
-    <h2 class="card-header bg-cyan-soft text-black">
+    <!-- <h2 class="card-header bg-cyan-soft text-black">
         Módulo Ejecutivo
-    </h2>
+    </h2> -->
 </div>
 <div class="card-body">
     <div class="container-fluid">
@@ -25,25 +25,31 @@ date_default_timezone_set('America/Mexico_City');
                 </div>
             </div>
             <div class="col-md-4">
-                <button class="btn btn-outline-success btn-block" id="entradas">ENTRADAS</button>
+                <button class="btn btn-outline-success btn-block" id="entradas_c">ENTRADAS</button>
                 <button class="btn btn-outline-primary btn-block" id="salidas" name="salidas">SALIDAS</button>
             </div>
         </div>
         <?php
-        foreach ($rubros as $k => $va) :
-            /* echo  $k . '===>' . $va . '<br>'; */
+        /* foreach ($rubros as $k => $va) :
+            // echo  $k . '===>' . $va . '<br>'; 
             $rub[$k] = array_filter($data[0], function ($key) use ($va) {
                 return strtolower($key['clasificacion']) == $va;
             });
             $tot[$k] = 0;
             foreach ($rub[$k] as $j => $v) :
                 $tot[$k] += $v['precio_compra'];
-            /*print_r($v['precio_compra']); echo '<br>';*/
+            //print_r($v['precio_compra']); echo '<br>';
             endforeach;
         endforeach;
         print_r($rub['inocuidad']);
         echo '<br><br>';
-        print_r($tot['inocuidad']);
+        print_r($tot['inocuidad']); */
+
+
+
+
+
+
 
         /* foreach ($rubros as $k => $va ): 
                 echo  $k .'===>'.$va . '<br>';
@@ -69,27 +75,31 @@ date_default_timezone_set('America/Mexico_City');
         /* var_dump($rubros); */
         ?>
 
-        <!-- <div class="dataTable_wrapper table-responsive custom-scrollbar">
+        <div class="dataTable_wrapper table-responsive custom-scrollbar">
             <div id="message"></div>
             <table class="table table-striped table-bordered table-hover" id="dataTable-entradas" width="100%">
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Fecha</th>
-                        <th>Responsable</th>
-                        <th>Subrancho</th>
-                        <th>Sector</th>
+                        <th>Cantidad</th>
+                        <th>nombre</th>
+                        <th>clasi</th>
+                      <!--  <th>Sector</th>
                         <th>Túnel</th>
-                        <th>Opciones</th>
+                        <th>Opciones</th> -->
                     </tr>
                 </thead>
             </table>
         </div>
- -->
+
     </div>
 </div> <!-- card-body -->
 
-<?php include "piePagina.php"; ?>
+<?php include "piePagina.php"; 
+    /* define('DIR_J','http://inomac.test/'); */
+    define('DIR_J','http://localhost:8080/local/dev/adm/in/');
+   /*  define('DIR_J','https://pruebas.inomac.mx/ejecutivo'); */
+?>
 <!--- ZONA PARA INCLUIR TUS JS -->
 
-<!-- <script src="./js/app.js"></script> -->
+<script src="<?= DIR_J ?>js/app.js"></script>
