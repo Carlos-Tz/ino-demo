@@ -24,6 +24,11 @@ class Controller{
 		require_once("view/view.php");
     }
 
+	public static function intros($arr_param){
+		require_once("view/entradas.php");
+	}
+
+
     // INSERTAR
     function nuevo(){
     	require_once("vista/nuevo.php");	    	    	

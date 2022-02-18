@@ -1,6 +1,9 @@
 <?php
 
-/* define('DIR_A', 'https://demo.inomac.mx/cap_humano'); */ ?>
+/* define('DIR_A', 'https://demo.inomac.mx/cap_humano'); */
+/* define('DIR_A','http://inomac.test/cap_humano/'); */
+
+?>
 
 
 
@@ -127,7 +130,7 @@
 
 
 
-
+<!-- 
 <script>
 
     var ctx = document.getElementById('myChart2').getContext('2d');
@@ -139,7 +142,6 @@
         type: 'bar',
 
         data: {
-
             labels: ["Agroquimico", "Fertilizante", "Eqpo. Electronico", "Ferreteria", "Mat. Riego", "Papeleria", "Inocuidad", "Acido", "Mat. Fumigacion", "Maq. Agricola", "Otros", "Servicios", "Vehículos", "Infraestructura"],
 
             datasets: [
@@ -587,7 +589,7 @@
     });
 
 </script>
-
+ -->
 
 
 <!-- Select 2 -->

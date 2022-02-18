@@ -6,7 +6,7 @@ class Modelo{
     private $db;
     public function __construct(){
         $this->Modelo = array();
-        $this->db=new PDO('mysql:host=localhost;dbname=demo',"root","");
+        $this->db=new PDO('mysql:host=localhost;dbname=inomac',"root","");
         /* $this->db = $this->conexion; */
     }
 

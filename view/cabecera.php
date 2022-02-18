@@ -1,8 +1,10 @@
 <?php
 
-    define('DIR_A','http://localhost:8080/local/dev/adm/in/cap_humano/');
+    /* define('DIR_A','http://localhost:8080/local/dev/adm/in/cap_humano/'); */
+    define('DIR_A','http://inomac.test/cap_humano/');
 
-define('DIR_S','http://localhost:8080/local/dev/adm/in');
+/* define('DIR_S','http://localhost:8080/local/dev/adm/in'); */
+define('DIR_S','http://inomac.test');
 
 
 
@@ -30,7 +32,7 @@ define('DIR_S','http://localhost:8080/local/dev/adm/in');
 
     <title>INOMAC</title>
 
-    <link rel="icon" type="image/x-icon" href="<?= DIR_A ?>assets/img/inomac.png" />
+    <!-- <link rel="icon" type="image/x-icon" href="<?= DIR_A ?>assets/img/inomac.png" /> -->
 
     <link href="<?= DIR_A ?>assets/css/styles.css" rel="stylesheet" />
 
