@@ -6,7 +6,7 @@ date_default_timezone_set('America/Mexico_City');
 
 <div class="card-body">
     <div class="container-fluid">
-        <H1>AQUI VA TU CODIGO</H1>
+        <H1>Módulo Ejecutivo</H1>
         <div class="row py-2  px-2" style="background-color: #e3e6ec">
             <div class="col-md-4">
                 <div class="form-group">
@@ -35,7 +35,7 @@ date_default_timezone_set('America/Mexico_City');
                         <th></th>
                         <th>rubro</th>
                         <th>total</th>
-                        <!-- <th>productos</th>   -->                      
+                        <!-- <th>productos</th>  --> 
                     </tr>
                 </thead>
             </table>
@@ -99,6 +99,9 @@ define('DIR_J', 'http://localhost:8080/local/dev/adm/in/');
             'serverMethod': 'post',
             'info': false,
             'dom': 'Bfrti',
+            'stateSave': true,
+            /* 'responsive': true,
+            'fixedHeader': true, */
             /* 'paging': false, */
             /* 'ordering': false, */
             'buttons':[
@@ -108,6 +111,9 @@ define('DIR_J', 'http://localhost:8080/local/dev/adm/in/');
             'ajax': {
                 'url': 'table1.php'
             },
+            'columnDefs': [
+                /* { targets: [ 3 ], visible: false }, */
+            ],
             'columns': [
                 {
                     className:      'dt-control',
@@ -116,11 +122,26 @@ define('DIR_J', 'http://localhost:8080/local/dev/adm/in/');
                     defaultContent: ''
                 },
                 { data: 'rubro' },
-                { data: 'total' },
-                /* { data: 'productos' }, */
-                /*{ data: 'nom_prod' },
-                { data: 'clasificacion' } */
-            ]
+                { data: 'total',
+                    render: function(data, type) {
+                        var number = $.fn.dataTable.render.number( ',', '.', 2, '$').display(data);                     
+                        return number;
+                    }
+                },
+                /* { data: 'productos',
+                    render: function(data, type){
+                        var tr = '';
+                        for(const p in data){
+                            tr += '<tr><td>'+data[p].p+'</td><td>'+data[p].cantidad+'</td><td>$ '+data[p].subtotal+'</td></tr>';
+                        }
+                        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+                                    '<tr><td>Producto</td><td>Cantidad</td><td>Subtotal</td></tr>'+
+                                    tr+
+                                '</table>';;
+                    },
+                    targets: 0
+                }, */
+            ],            
         });
 
         $('#table1 tbody').on('click', 'td.dt-control', function () {
